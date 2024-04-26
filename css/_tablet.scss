@@ -1,0 +1,96 @@
+@media (max-width: 1024px) {
+	.container {
+		padding-left: calc(50% - 786px / 2);
+		padding-right: calc(50% - 786px / 2);
+	}
+
+	.top {
+		background-image: url(../img/bgi-834.jpg);
+	}
+
+	.top-catalog {
+		height: 400px;
+		background-image: url(../img/catalog-top.jpg);
+	}
+
+	.for {
+		&__item-1 {
+			background-image: url(../img/555.jpg);
+		}
+		&__item-2 {
+			background-image: url(../img/for-2-tablet.jpg);
+		}
+		&__item-3 {
+			background-image: url(../img/for-3-tablet.jpg);
+		}
+		&__item-4 {
+			background-image: url(../img/for-4-tablet.jpg);
+		}
+		&__item-5 {
+			background-image: url(../img/for-5-tablet.jpg);
+		}
+
+		&__list {
+			grid-gap: 30px;
+		}
+
+		&__list-item {
+			height: 268px;
+		}
+	}
+
+	.offer {
+		margin-bottom: 64px;
+		&__list {
+			grid-template-columns: repeat(8, 1fr);
+			grid-column-gap: 29px;
+			grid-row-gap: 39px;
+			margin-bottom: 33px;
+		}
+	}
+
+	.catalog {
+		margin-bottom: 65px;
+		&__list {
+			grid-template-columns: repeat(8, 1fr);
+			grid-column-gap: 29px;
+			grid-row-gap: 37px;
+			margin-bottom: 40px;
+		}
+		&__subtitle {
+			margin-bottom: 11px;
+		}
+	}
+
+	.footer {
+		&__logo {
+			display: none;
+		}
+		&__container {
+			padding-top: 24px;
+			padding-bottom: 32px;
+		}
+	}
+
+	// cart (корзина)
+	.cart {
+		grid-template-columns: repeat(8, 1fr);
+		row-gap: 64px;
+		&__btn-box {
+			margin-top: 2px;
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 833px) {
+	.container {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
+	.offer {
+		&__title {
+			font-size: 43px;
+		}
+	}
+}
